@@ -303,7 +303,6 @@ Function is a block of code designed to perform a particular task. It is a resua
 
 - **Javascrpt apply() method :**
   apply() method is almost same as call() . only difference is, the call method takes arguments separately. But the apply() method takes arguments as an array.
-
   ```javascript
   const person = {
   fullName: function(city, country) {
@@ -319,6 +318,8 @@ Function is a block of code designed to perform a particular task. It is a resua
   person.fullName.apply(person1, ["Oslo", "Norway"]);
   // it will return "john Doe Oslo Norway"
   ```
+
+##
 
 - **Javascript function bind() :**
   With the bind() method, an object can borrow a method from other object.
@@ -383,3 +384,116 @@ Function is a block of code designed to perform a particular task. It is a resua
   ```
 
   ```
+
+##
+
+- **Closure function**
+  Closure is a technique in JavaScript where a function retains access to its outer variables, even after the outer function has finished executing. Closures are a powerful feature because they allow for function level scope encapsulation, preserving the local variables of the function within it's lexical scope even after the function has executed.  
+  The concept can be used for various proposes, such as : - Data privacy : we can encapulate private variables and method. - Partial application: used to create paritally applied functions. - Maintaining state : Closures allow functions to retain state be''tween execution.
+
+          Here's an example demonstrating data privacy and maintaining state using closures:
+
+  ```javascript
+    function counter(){
+      let count= 0;
+      return function(){
+       count++;
+       return count;
+      };
+    }
+
+    const increment= counter()
+    console.log(increment()) //output: 1
+     console.log(increment()) //output: 2
+  ```
+
+          In this example, `counter` is a function that defines a variable `count` and returns an inner function that increments and returns the value of `count`.
+
+      the inner function forms a closure that retains access to `count` even after `counter` has finished executing.
+
+      Each time `increment` is called , it updates and logs the value of `count`.
+
+  ##
+
+- **Currying**
+  Curring in javascript is a technique of transforming a funciton that takes multiple arguments into a sequence of functon that each take a single argument. This allows for partical application of a function's arguemts, enabling us to fix certain arguments and generate a new function that takes the remaining arguments.
+
+  ```javascript
+  function prism(l) {
+   return function(w) {
+    return function(h) {
+    return l * w * h;
+       }
+     }
+    }
+    prism(2)(3)(5) // output: 30
+    // alternatively with concise ES6 syntax
+    let prism = l => w => h => l * w * h;
+  ```
+
+  another example:
+
+  ```javascript
+   const calculateFinalPrice = price => discount => taxRate => {
+  const discountedPrice = price - (price * discount);
+  const finalPrice = discountedPrice + (discountedPrice * taxRate);
+  return finalPrice;
+  };
+
+  // Partially apply the price
+  const price100 = calculateFinalPrice(100);
+
+  // Partially apply the discount
+  const price100With10PercentDiscount = price100(0.1);
+
+  // Finally apply the tax rate
+  const finalPrice = price100With10PercentDiscount(0.2);
+
+  console.log(finalPrice); // Output: 108
+
+  ```
+
+##
+
+- **Recursive function :**
+  A recursive funciton is a function that calls itself during it's execution. This technique allows the function to repeat it's behavior and is particularly useful for solving problems that can be broken down into smaller similar subproblems.
+
+  Example : Factorial function.
+
+  The factorial of a non-negative integer nnn (denoted as n!n!n!) is the product of all positive integers less than or equal to nnn. It can be defined recursively as:
+
+  - 0!=1 (base case)
+  - n!=n×(n−1)! for n>0 (recursive case)
+
+  ```javascript
+  function factorial(n) {
+   // Base case
+   if (n === 0) {
+       return 1;
+   }
+   // Recursive case
+   return n * factorial(n - 1);
+   }
+
+  console.log(factorial(5)); // Output: 120
+
+  ```
+
+##
+
+- **Higher order funciton :**
+
+  Higher-order functions are functions that either take other functions as arguments, return a function as a result, or both. This concept is a key feature of functional programming and is widely used in JavaScript
+
+  ```javascript
+  function applyTwice(func, value) {
+    return func(func(value));
+   }
+
+  const double = x => x * 2;
+  console.log(applyTwice(double, 5)); // Output: 20
+  ```
+
+  `map()`,`reduce()`,`forEach()` etc are the higher order array methods .
+
+  **end.** :)
