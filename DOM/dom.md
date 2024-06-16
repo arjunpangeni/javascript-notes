@@ -8,15 +8,14 @@ The DOM represents the document as a tree of objects. Which allows javascrpt to 
 
 1.  **Tree structure** : The DOM is structure as a tree of object. Each element, attribute, and piece of text in an HTML document is represent as a node in the tree. This hierarchical representation makes it easier to navigate and manipulate the document.
 
-
     ![Tree structure of dom](https://miro.medium.com/v2/resize:fit:1200/1*CcxghvAHaaaI-tOPkqP-og.png)
 
-2. **Nodes :** The DOM defines several types of nodes, including:
-   - Element nodes : Represent HTML elements (like h1, p, img etc)
-   - Text nodes : Represent the text within HTML elements
-   - Attributes nodes: Represent the attributes of HTML elements. ( id, class, events etc )
-   - Comment nodes : Represent comments in the HTML.
-3. **Interfaces**: The DOM provides a set of interfaces to access and manipulate the content, structure, and style of a document. These interfaces include methods to retrive elements , add or remove nodes, and modify element attributes. Here are some of the key interfaces in the DOM.
+2.  **Nodes :** The DOM defines several types of nodes, including:
+    - Element nodes : Represent HTML elements (like h1, p, img etc)
+    - Text nodes : Represent the text within HTML elements
+    - Attributes nodes: Represent the attributes of HTML elements. ( id, class, events etc )
+    - Comment nodes : Represent comments in the HTML.
+3.  **Interfaces**: The DOM provides a set of interfaces to access and manipulate the content, structure, and style of a document. These interfaces include methods to retrive elements , add or remove nodes, and modify element attributes. Here are some of the key interfaces in the DOM.
 
 - `Node` interface :
   ( It is base interface from which many other interfaces inherit.)
@@ -89,3 +88,5 @@ The DOM represents the document as a tree of objects. Which allows javascrpt to 
 5. **Event Handling:** The DOM supports event handling, allowing scripts to respond to user interactions like clicks, keyboard inputs, and other events.
 
 ##
+
+## **All DOM selectors**
