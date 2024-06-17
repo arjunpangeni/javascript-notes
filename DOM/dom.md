@@ -8,14 +8,15 @@ The DOM represents the document as a tree of objects. Which allows javascrpt to 
 
 1.  **Tree structure** : The DOM is structure as a tree of object. Each element, attribute, and piece of text in an HTML document is represent as a node in the tree. This hierarchical representation makes it easier to navigate and manipulate the document.
 
+
     ![Tree structure of dom](https://miro.medium.com/v2/resize:fit:1200/1*CcxghvAHaaaI-tOPkqP-og.png)
 
-2.  **Nodes :** The DOM defines several types of nodes, including:
-    - Element nodes : Represent HTML elements (like h1, p, img etc)
-    - Text nodes : Represent the text within HTML elements
-    - Attributes nodes: Represent the attributes of HTML elements. ( id, class, events etc )
-    - Comment nodes : Represent comments in the HTML.
-3.  **Interfaces**: The DOM provides a set of interfaces to access and manipulate the content, structure, and style of a document. These interfaces include methods to retrive elements , add or remove nodes, and modify element attributes. Here are some of the key interfaces in the DOM.
+2. **Nodes :** The DOM defines several types of nodes, including:
+   - Element nodes : Represent HTML elements (like h1, p, img etc)
+   - Text nodes : Represent the text within HTML elements
+   - Attributes nodes: Represent the attributes of HTML elements. ( id, class, events etc )
+   - Comment nodes : Represent comments in the HTML.
+3. **Interfaces**: The DOM provides a set of interfaces to access and manipulate the content, structure, and style of a document. These interfaces include methods to retrive elements , add or remove nodes, and modify element attributes. Here are some of the key interfaces in the DOM.
 
 - `Node` interface :
   ( It is base interface from which many other interfaces inherit.)
@@ -171,83 +172,53 @@ DOM (Document Object Model) selectors are used in web development to select and 
 
   The `querySelector` method is versatile and powerful, allowing selection of elements using various CSS selectors, such as IDs, classes, tags, attributes, descendants, combinations, and pseudo-classes. This flexibility makes it a popular choice for selecting and manipulating DOM elements.
 
-      For example :
+  For example :
 
-  <br>
+  From the above example , we can use multiple ways to select the different elemets using various `CSS` selectors.
 
-      ````html
-
-     <!DOCTYPE  html>
-     <html  lang="en">
-
-     <head>
-     <meta  charset="UTF-8">
-     <meta  name="viewport"  content="width=device-width, 
-      initial-scale=1.0">
-      <title>Document</title>
-     </head>
-
-      <body>
-        <div  id="myElement">first div</div>
-        <div  class="myClass">class element</div>
-        <input  type="text"  name="username"  value="arjun">
-        <div  id="main"  class="container">
-             <p  class="text">First paragraph</p>
-             <p  class="texttwo">Second paragraph</p>
-      </div>
-      <ul>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-      </ul>
-
-     </body>
-     </html>
-       ````
-        From the above example , we can use multiple ways to select the     different elemets using various `CSS` selectors. 
-       - **Selecting by ID**
-          ````javascript
-          const element = document.querySelector('#myElement')
-          console.log(element.innerText):
-          //output: first element 
-          ````
-       -  **Selecting by className**
-          ````javascript
-          const element = document.querySelector('.myClass')
-          console.log(element.innerText):
-          //output: class element  
-          ````
-        - **Selecting by Tagname**
-          ````javascript
-          //selecting first div
-           const element = document.querySelector('div')
-          console.log(element.innerText):
-          //output: firstelement  
-          ````
-        -   **Selecting by Attribute**
-              ````javascript
-            const element = document.querySelector('input[name='username']')
-            console.log(element.value) 
-            //output: 'árjun'
-            ````
-       - **Selecting by decendent**
-         ````javascript
-         const element= document.querySelector('.container .text')
-         console.log(element.innerText);
-         //output: First paragraph
-         ````
-        - **Selecting by combination**
-            ````javascript
-            const element= document.querySelector("#main .texttwo")
-            console.log(element.innerText)
-            //output : Second paragraph
-            ````
-         - **Selecting by Pseudo-Class**
-           ````javascript
-           const element= document.querySelector('li:first-child')
-           console.log(element.innerText) 
-           //outputs: First item
-           ````
+  - **Selecting by ID**
+    ```javascript
+    const element = document.querySelector('#myElement')
+    console.log(element.innerText):
+    //output: first element
+    ```
+  - **Selecting by className**
+    ```javascript
+    const element = document.querySelector('.myClass')
+    console.log(element.innerText):
+    //output: class element
+    ```
+  - **Selecting by Tagname**
+    ```javascript
+    //selecting first div
+     const element = document.querySelector('div')
+    console.log(element.innerText):
+    //output: firstelement
+    ```
+  - **Selecting by Attribute**
+    ```javascript
+    const element = document.querySelector('input[name='username']')
+    console.log(element.value)
+    //output: 'árjun'
+    ```
+  - **Selecting by decendent**
+    ```javascript
+    const element= document.querySelector('.container .text')
+    console.log(element.innerText);
+    //output: First paragraph
+    ```
+  - **Selecting by combination**
+    ```javascript
+    const element= document.querySelector("#main .texttwo")
+    console.log(element.innerText)
+    //output : Second paragraph
+    ```
+  - **Selecting by Pseudo-Class**
+    ```javascript
+    const element= document.querySelector('li:first-child')
+    console.log(element.innerText)
+    //outputs: First item
+    ```
 
 - **`querySelectorAll`**: Selects all elements that match a CSS selector, Returns a static NodeList.
 
