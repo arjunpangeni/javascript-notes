@@ -173,6 +173,7 @@ DOM (Document Object Model) selectors are used in web development to select and 
   The `querySelector` method is versatile and powerful, allowing selection of elements using various CSS selectors, such as IDs, classes, tags, attributes, descendants, combinations, and pseudo-classes. This flexibility makes it a popular choice for selecting and manipulating DOM elements.
 
   For example :
+<img  alt="domselector" src="https://github.com/arjunpangeni/javascript-notes/assets/126581290/b289e6a5-5c4f-4110-b8b8-3aa2409d1de5">
 
   From the above example , we can use multiple ways to select the different elemets using various `CSS` selectors.
 
