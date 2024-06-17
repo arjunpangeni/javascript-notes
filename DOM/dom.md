@@ -89,6 +89,7 @@ The DOM represents the document as a tree of objects. Which allows javascrpt to 
 
 ##
 
-## **All DOM selectors**
+### **HTML Collection**
 
-hl
+HTML collection is a collection of ( array-like object/ not exacty array) of HTML elements . It is a list of DOM elements that match certain criteria. For example, they may have the same tag name or class. Or they may be related in a specific context, like children of a particular element. example.
+![enter image description here](%22C:%5CUsers%5Carjun%20pangeni%5CDesktop%5CScreenshot%202024-06-18%20020205.png%22)
