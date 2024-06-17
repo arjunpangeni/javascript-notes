@@ -90,3 +90,5 @@ The DOM represents the document as a tree of objects. Which allows javascrpt to 
 ##
 
 ## **All DOM selectors**
+
+hl
