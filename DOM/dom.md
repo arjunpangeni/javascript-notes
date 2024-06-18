@@ -223,3 +223,115 @@ DOM (Document Object Model) selectors are used in web development to select and 
 - **`querySelectorAll`**: Selects all elements that match a CSS selector, Returns a static NodeList.
 
   In the case of `querySelectorAll` , it is similar as selector uses in `querySelector`. Only different is `querySelector` returns the first matching element but `querySelectorAll` returns a static NodeList. we have use itterator to access or manipulate the elements in collection.
+
+##
+
+### Accessing parent element to child and vice versa .
+   **parent to child:**
+  Accessing child element from parent element examples:
+  ````javascript
+  <div class="parent">
+      <div class='day'>monday</div>  
+       <div clss='day'>tuesday</div> 
+  <div>
+  <script>
+  let parent= document.querySelector('.parent')
+  
+  // access all child
+  console.log(parent.children) 
+  // returuns HTMLCollection of child
+  console.log(parent.childNodes)
+   // returns NodeList of child.
+  
+  // access first child
+  console.log(parent.firstElementChild.innerHtml)
+   // output: first child(monday 
+  
+  // access list child 
+  console.log(parent.lastElementChild.innerHtml) 
+  // output: last child (tuesday)
+  </script>
+  ````
+
+ **Child to parent**
+ Accessing parent element from child element example .
+ ``` javascript
+ let child = document.querySelector('.day'); 
+ // first day element.
+ 
+ console.log( child.parentElement);
+ // output: main parent div
+ ```
+
+**child to child**
+```javascript
+ let child= document.querySelector('.day')
+ console.log(child.nextElementSibiling.innerHTML)
+ //output: monday
+```
+## 
+ ### Create a new Element in DOM :
+ - ``createElement()``: for create new element.
+ - ``appendChild()``: append new child element to the parenet 
+ 
+ In this example , we have empty  body . Then we create a div element , set it's attributes , set it's inner text. provide styling and finally add this div to the main body . 
+```javascript
+<body>
+
+</body>
+<script>
+ const div= document.createElement('div')
+ // set attributes on div
+ div.setAttribute("id","main")
+  //or 
+  div.className= 'mainDiv'
+ 
+ // add text in div 
+ div.innerText= "hello world"
+  //or
+  div.appendChild(document.createTextNode('hello world'))
+
+    // add style in div 
+    div.style.backgroundColor= 'green'
+    div.style.color= 'blue';
+
+
+   // now add div element to the body of html 
+   document.body.appendChild(div)
+</script>
+```
+##
+### Edit and remove elements in DOM.
+ - ``replaceWith()`` : for replace element
+ - ``remove()`` : for remove element
+ 
+In this example , i will select the second list (india ) and edit it with new text content.
+````javascript
+  <div>
+   <ul>
+     <li>nepal</li>
+     <li>india</li>
+   </ul>
+  </div>
+  <script>
+const secondCountry= document.querySelector('li:nth-child(2)')
+   // change india 
+ secondCountry.innerHTML='bhutan'
+   
+   // create new text content
+ const newli = document.createElement('li')
+   newli.textcontent='pakistan'
+   
+   // replace india with pakistan
+ secondCountry.replaceWith(newli)
+
+     //or
+ secondCountry.outerHtml='<li>srilanka</li>'
+
+
+    / remove last child
+ const country= document.querySelector('li:last-child')
+       country.remove()
+   
+  </script>
+````
