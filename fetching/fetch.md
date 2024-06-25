@@ -54,3 +54,19 @@ console.error('There was a
 6. **Error Handling:**
 
 - .catch(error => { ... }): Catches any errors that occur during the fetch operation, including network errors or JSON parsing errors.
+
+### using async await
+
+```javascript
+async function getUser() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
+        // console.log(data)
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+getUser()
+```
