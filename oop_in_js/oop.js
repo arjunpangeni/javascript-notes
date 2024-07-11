@@ -105,5 +105,5 @@ String.prototype.TrueLength = function () {
 fullname.TrueLength(); // true length is: 12
 
 
-// call this 
+
 
