@@ -70,3 +70,4 @@ async function getUser() {
 }
 getUser()
 ```
+*Data from fetch method is in json format , which will be tranfrom into the object for the further actions*
