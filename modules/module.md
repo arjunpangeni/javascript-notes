@@ -5,3 +5,7 @@ As our application grows bigger, we want to split it into multiple files, so cal
 For a long time, JavaScript existed without a language-level module syntax. That wasn’t a problem, because initially scripts were small and simple, so there was no need.
 
 But eventually scripts became more and more complex, so the community invented a variety of ways to organize code into modules, special libraries to load modules on demand.
+
+## export
+
+## import
