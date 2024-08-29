@@ -128,3 +128,7 @@ warn('This is a warning!'); // This is a warning!
 - **CommonJS** is traditionally used in Node.js environments.
 
 In new projects, it's generally recommended to use ES6 modules for their cleaner syntax and better integration with modern JavaScript features and tooling.
+
+few examples 
+
+emproting the modules 
