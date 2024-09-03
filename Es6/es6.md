@@ -128,6 +128,7 @@ ES6 (ECMAScript 2015) introduced many new features to JavaScript, making the lan
    fetchData
      .then((message) => console.log(message))
      .catch((error) => console.error(error));
+
    ```
 
-These examples demonstrate some of the most important features introduced in ES6, making JavaScript more powerful and easier to work with.
+These examples demonstrate some of the most important features introduced in ES6, making JavaScript more powerful and easier to work with. thank you 
