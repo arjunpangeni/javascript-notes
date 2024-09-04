@@ -131,4 +131,4 @@ ES6 (ECMAScript 2015) introduced many new features to JavaScript, making the lan
 
    ```
 
-These examples demonstrate some of the most important features introduced in ES6, making JavaScript more powerful and easier to work with. thank you 
+These examples demonstrate some of the most important features introduced in ES6, making JavaScript more powerful and easier to work wih . thank you very much
