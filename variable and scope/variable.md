@@ -2,7 +2,7 @@
 
 ## Variable
 
-> Variable is a "named storage" for data. It can hold various type of data. we can use 3 types of keywords var, let , and const to declear variables
+Variable is a "named storage" for data. It can hold various type of data. we can use 3 types of keywords var, let , and const to declear variables
 
 ### Declearation and Assignment
 
@@ -51,7 +51,7 @@ const fruit="mango"
 
 ## Scope
 
-> In JavaScript, "scope" refers to the context in which variables, functions, and objects are accessible. Understanding scope is crucial for writing clean and maintainable code.
+In JavaScript, "scope" refers to the context in which variables, functions, and objects are accessible. Understanding scope is crucial for writing clean and maintainable code.
 
 ### global scope
 
