@@ -1,4 +1,4 @@
-# **Javascript methods**
+# Javascript methods
 
 There are different methods that can be applied to arrays in JavaScript. These methods can be distinguished between mutating and non-mutating. Some methods do not mutate the existing array that the method was called on, but instead return a new array. Others mutate the original array. Here, I will explain important methods based on their mutability, alternative methods, and their availability in the JavaScript engine.
 
