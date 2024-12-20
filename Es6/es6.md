@@ -1,4 +1,4 @@
-ES6 (ECMAScript 2015) introduced many new features to JavaScript, making the language more powerful and easier to work with. Here are some key features of ES6 along with examples:
+bES6 (ECMAScript 2015) introduced many new features to JavaScript, making the language more powerful and easier to work with. Here are some key features of ES6 along with examples:
 
 ### 1. **Let and Const**
    - `let` and `const` are block-scoped variables.
@@ -131,4 +131,4 @@ ES6 (ECMAScript 2015) introduced many new features to JavaScript, making the lan
 
    ```
 
-These examples demonstrate some of the most important features introduced in ES6, making JavaScript more powerful and easier to work wih . thank you very much
+These examples demonstrate some of the most important features introduced in ES6.
